@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.royal.compoundbuttondemo.MainActivity">
+
+ <LinearLayout
+     android:layout_width="368dp"
+     android:layout_height="495dp"
+     android:orientation="vertical"
+     tools:layout_editor_absoluteY="8dp"
+     tools:layout_editor_absoluteX="8dp">
+     <RadioGroup
+         android:id="@+id/rgGender"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <RadioButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/rbFemale"
+             android:checked="true"
+             android:text="Female"/>
+
+         <RadioButton
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/rbMale"
+             android:text="Male"/>
+     </RadioGroup>
+
+     <CheckBox
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/cbPlace"
+         android:layout_marginTop="12dp"
+         android:onClick="onPlaceClick"
+         android:text="Taipei station"/>
+
+     <ToggleButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/tbVibrate"
+         android:layout_marginTop="12dp"
+         android:onClick="onVibrateClick"
+         android:textOff="OFF"
+         android:textOn="On"/>
+
+     <Switch
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/swWifi"
+         android:layout_marginTop="12dp"
+         android:padding="10dp"
+         android:switchMinWidth="12sp"
+         android:switchPadding="12sp"
+         android:text="WiFi"
+         android:textOff="OFF"
+         android:textOn="ON"/>
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="60dp"
+         android:id="@+id/tvMessage"
+         android:layout_marginTop="30dp"
+         android:background="#00FFFF"
+         android:padding="10dp"/>
+ </LinearLayout>
+</android.support.constraint.ConstraintLayout>
